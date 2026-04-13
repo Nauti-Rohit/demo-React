@@ -1,0 +1,29 @@
+{
+  "name": "demo-react",
+  "version": "1.0.0",
+  "description": "i m revised my learning here",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nauti-Rohit/demo-React.git"
+  },
+  "keywords": [],
+  "author": "Rohit Nautiyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nauti-Rohit/demo-React/issues"
+  },
+  "homepage": "https://github.com/Nauti-Rohit/demo-React#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
