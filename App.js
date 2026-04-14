@@ -11,5 +11,7 @@ const parent = React.createElement(
   ),
 );
 
+const jsxHeading = <h1> This is my first lesson using JSX </h1>;
+
 const root = ReactDOM.createRoot(document.getElementById("parent"));
-root.render(parent); // ✅ correct
+root.render(jsxHeading); // ✅ correct
