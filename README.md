@@ -74,3 +74,11 @@ const HeadingComponent1 = () => (
     <h1 className="heading1">Hello! i am Rohit Nautiyal</h1>
   </div>
 );
+
+JSX helps keep your app safe from Cross-Site Scripting (XSS) attacks.
+
+These three thinks are same:
+
+- <Title/>
+- <title></Title>
+- {Title()}
