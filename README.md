@@ -77,8 +77,26 @@ const HeadingComponent1 = () => (
 
 JSX helps keep your app safe from Cross-Site Scripting (XSS) attacks.
 
-These three thinks are same:
+These three thinks are the same:
 
 - <Title/>
 - <title></Title>
 - {Title()}
+
+Creating a food app:
+
+Planing: "nautiFood"
+Header: logo | nav inks | cart
+Body: search bar, restro card,
+Footer: copywrite
+
+Component:
+Header: logo, nav-items
+Body: search, card container, card and resto details
+Footer: copywrite, links, address, contact
+
+Monolith Architecture:
+all the code in a same service
+
+Microservice Architecture:
+seprate of conerrn and single responsibility principle
