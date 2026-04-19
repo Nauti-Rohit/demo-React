@@ -1,1 +1,32 @@
-  
+* {
+  margin: 0px;
+}
+.header {
+  background-color: black;
+  border-bottom: 1px solid black;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px 5px;
+}
+
+img.header-logo {
+  width: 115px !important;
+}
+
+.nav-items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+.nav-items ul li {
+  padding: 0px 20px;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+}
