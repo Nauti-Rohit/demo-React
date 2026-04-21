@@ -24,10 +24,75 @@ const Header = () => {
   );
 };
 
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search-container">
+        <form>
+          <input type="text" placeholder="Search..." />
+          <button>Search</button>
+        </form>
+      </div>
+
+      <div className="restaurant-list">
+        <div className="restaurant-card">
+          <img
+            src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
+            alt="Restaurant 1"
+            className="restaurant-image"
+          />
+          <div className="restaurant-details">
+            <h3>Restaurant 1</h3>
+            <p>Rating: 4.5</p>
+            <p>Delivery Time: 30-40 mins</p>
+          </div>
+        </div>
+        <div className="restaurant-card">
+          <img
+            src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
+            alt="Restaurant 1"
+            className="restaurant-image"
+          />
+          <div className="restaurant-details">
+            <h3>Restaurant 1</h3>
+            <p>Rating: 4.5</p>
+            <p>Delivery Time: 30-40 mins</p>
+          </div>
+        </div>
+        <div className="restaurant-card">
+          <img
+            src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
+            alt="Restaurant 1"
+            className="restaurant-image"
+          />
+          <div className="restaurant-details">
+            <h3>Restaurant 1</h3>
+            <p>Rating: 4.5</p>
+            <p>Delivery Time: 30-40 mins</p>
+          </div>
+        </div>
+        <div className="restaurant-card">
+          <img
+            src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
+            alt="Restaurant 1"
+            className="restaurant-image"
+          />
+          <div className="restaurant-details">
+            <h3>Restaurant 1</h3>
+            <p>Rating: 4.5</p>
+            <p>Delivery Time: 30-40 mins</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
+      <Body />
     </div>
   );
 };
