@@ -14,8 +14,8 @@ const Header = () => {
         <div className="nav-items">
           <ul>
             <li>Home </li>
-            <li>About Us </li>
-            <li>Contact Us</li>
+            <li>About </li>
+            <li>Contact</li>
             <li>Cart</li>
           </ul>
         </div>
@@ -35,54 +35,27 @@ const Body = () => {
       </div>
 
       <div className="restaurant-list">
-        <div className="restaurant-card">
-          <img
-            src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
-            alt="Restaurant 1"
-            className="restaurant-image"
-          />
-          <div className="restaurant-details">
-            <h3>Restaurant 1</h3>
-            <p>Rating: 4.5</p>
-            <p>Delivery Time: 30-40 mins</p>
-          </div>
-        </div>
-        <div className="restaurant-card">
-          <img
-            src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
-            alt="Restaurant 1"
-            className="restaurant-image"
-          />
-          <div className="restaurant-details">
-            <h3>Restaurant 1</h3>
-            <p>Rating: 4.5</p>
-            <p>Delivery Time: 30-40 mins</p>
-          </div>
-        </div>
-        <div className="restaurant-card">
-          <img
-            src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
-            alt="Restaurant 1"
-            className="restaurant-image"
-          />
-          <div className="restaurant-details">
-            <h3>Restaurant 1</h3>
-            <p>Rating: 4.5</p>
-            <p>Delivery Time: 30-40 mins</p>
-          </div>
-        </div>
-        <div className="restaurant-card">
-          <img
-            src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
-            alt="Restaurant 1"
-            className="restaurant-image"
-          />
-          <div className="restaurant-details">
-            <h3>Restaurant 1</h3>
-            <p>Rating: 4.5</p>
-            <p>Delivery Time: 30-40 mins</p>
-          </div>
-        </div>
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+      </div>
+    </div>
+  );
+};
+
+const RestaurantCard = () => {
+  return (
+    <div className="restaurant-card">
+      <img
+        src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
+        alt="Restaurant 1"
+        className="restaurant-image"
+      />
+      <div className="restaurant-details">
+        <h3>Restaurant 1</h3>
+        <p>Rating: 4.5</p>
+        <p>Delivery Time: 30-40 mins</p>
       </div>
     </div>
   );

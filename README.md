@@ -91,9 +91,13 @@ Body: search bar, restro card,
 Footer: copywrite
 
 Component:
-Header: logo, nav-items
-Body: search, card container, card and resto details
-Footer: copywrite, links, address, contact
+header: logo, nav items,
+body: search, card container, card and resto details
+footer: copywrite, links. address, contact
+
+Props: Passing argument to component is called props, Or dynamically passing some data to component you passing as a prop.
+
+Config Driven UI: It means your UI is not hardcoded in components, but instead controlled by a configuration object (JSON, JS object, or API response).
 
 Monolith Architecture:
 all the code in a same service
