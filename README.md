@@ -97,7 +97,7 @@ footer: copywrite, links. address, contact
 
 Props: Passing argument to component is called props, Or dynamically passing some data to component you passing as a prop.
 
-Config Driven UI: It means your UI is not hardcoded in components, but instead controlled by a configuration object (JSON, JS object, or API response).
+Config Driven UI: It means your UI is not hardcoded in components, but instead controlled by a configuration object (JSON, JS object, or API response). config comes from backend Ex. UI can be different based on city, Month, Occasion etc...
 
 Monolith Architecture:
 all the code in a same service
