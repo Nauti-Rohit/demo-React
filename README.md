@@ -99,6 +99,10 @@ Props: Passing argument to component is called props, Or dynamically passing som
 
 Config Driven UI: It means your UI is not hardcoded in components, but instead controlled by a configuration object (JSON, JS object, or API response). config comes from backend Ex. UI can be different based on city, Month, Occasion etc...
 
+we can decide the file structure of our porject.
+Developer are using ample of extention like jsx, tsx and js. you can write anything according your choice. all are did same things.
+
+
 Monolith Architecture:
 all the code in a same service
 
