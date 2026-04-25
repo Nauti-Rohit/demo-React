@@ -22,6 +22,7 @@ img.header-logo {
   align-items: center;
   text-align: center;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .nav-items ul li {
@@ -67,10 +68,17 @@ button {
   padding: 20px;
 }
 .restaurant-card {
-  width: 300px;
+  width: 294px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.restaurant-card:hover {
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 .restaurant-image {
