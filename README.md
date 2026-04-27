@@ -103,8 +103,31 @@ we can decide the file structure of our porject.
 Developer are using ample of extention like jsx, tsx and js. you can write anything according your choice. all are did same things.
 
 
+Use always key whenever "key" props in show data, its imp because Key prop helps React uniquely identify elements during re-rendering for efficient updates. 
+React compares the old UI and new UI during re-rendering (this is called reconciliation).
+
+do not follow this type Ex-
+{items.map((item, index) => (
+  <Component key={index} data={item} />
+))}
+Using index as key is usually not recommended because if items are added/removed/reordered, React may update the wrong component.
+
+when you have no choice then only can use index. as a last option better to not passing key.
+
+
+Their is two types of Export/Import:
+1- Default Export   
+(export default Header;) (import Header from "./components/Header";) 
+2- Named Export  
+(export const CDN_Url) (import { CDN_Url } from "../utils/constants";)
+
+
+
+
+
 Monolith Architecture:
 all the code in a same service
 
 Microservice Architecture:
 seprate of conerrn and single responsibility principle
+

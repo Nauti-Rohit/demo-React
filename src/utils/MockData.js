@@ -1,35 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="header-container">
-        <div className="logo-container">
-          <img
-            className="header-logo"
-            src="https://marketplace.canva.com/EAGXsRURT9o/1/0/1600w/canva-yellow-and-brown-kitchen-food-logo-JrzZUwc_CLQ.jpg"
-          />
-        </div>
-        <div className="nav-items">
-          <ul>
-            <li>Home </li>
-            <li>About </li>
-            <li>Contact</li>
-            <li>Cart</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 const restObj = [
   {
     info: {
       id: "345678",
       name: "Green Bites",
-      cloudinaryImageId: "e0839ff574213e6f35b3899ebf1fc597",
+      cloudinaryImageId: "0d/07/cf/ce/notre-chef-david-janelle.jpg",
       locality: "Residency Road",
       areaName: "South Zone",
       costForTwo: "₹250 for two",
@@ -53,7 +27,7 @@ const restObj = [
     info: {
       id: "456789",
       name: "Spice Kingdom",
-      cloudinaryImageId: "rng/md/carousel/production/indian101",
+      cloudinaryImageId: "0d/aa/40/19/nouveau-menu-de-saison.jpg",
       locality: "Brigade Road",
       areaName: "City Center",
       costForTwo: "₹500 for two",
@@ -77,8 +51,7 @@ const restObj = [
     info: {
       id: "567890",
       name: "Chinese Dragon",
-      cloudinaryImageId:
-        "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/ba9f1f59-30d5-44de-afad-df6db8471ead_9648.jpg",
+      cloudinaryImageId: "09/3f/46/a4/restaurant-la-cuisine.jpg",
       locality: "Commercial Street",
       areaName: "East District",
       costForTwo: "₹350 for two",
@@ -102,8 +75,7 @@ const restObj = [
     info: {
       id: "678901",
       name: "Dessert Delight",
-      cloudinaryImageId:
-        "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/8/731001f1-f1c4-4f5f-849f-79a697cb0b72_390173.jpg",
+      cloudinaryImageId: "08/41/1f/96/la-cuisine.jpg",
       locality: "Lavelle Road",
       areaName: "West End",
       costForTwo: "₹200 for two",
@@ -127,8 +99,7 @@ const restObj = [
     info: {
       id: "789012",
       name: "Sushi Station",
-      cloudinaryImageId:
-        "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/24/acfcaacc-edf0-4189-8264-d614d312c0ee_740457.JPG",
+      cloudinaryImageId: "0d/5f/59/cb/notre-bar-agreable-pour.jpg",
       locality: "Indiranagar",
       areaName: "Uptown",
       costForTwo: "₹800 for two",
@@ -152,8 +123,7 @@ const restObj = [
     info: {
       id: "890123",
       name: "South Spice",
-      cloudinaryImageId:
-        "RX_THUMBNAIL/IMAGES/VENDOR/2025/6/17/6def0f0f-9e6c-45c0-b5e6-05af750f27b5_795906.JPG",
+      cloudinaryImageId: "0d/5f/58/90/vue-du-restaurant-et.jpg",
       locality: "Jayanagar",
       areaName: "South Bangalore",
       costForTwo: "₹300 for two",
@@ -177,8 +147,7 @@ const restObj = [
     info: {
       id: "901234",
       name: "Pasta Palace",
-      cloudinaryImageId:
-        "RX_THUMBNAIL/IMAGES/VENDOR/2025/10/17/7bd350a8-55e7-459b-83a2-e250e670d194_14558.JPG",
+      cloudinaryImageId: "0f/b5/6a/3a/le-restaurant-est-situe.jpg",
       locality: "Koramangala",
       areaName: "Tech Hub",
       costForTwo: "₹450 for two",
@@ -199,52 +168,4 @@ const restObj = [
     },
   },
 ];
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search-container">
-        <form>
-          <input type="text" placeholder="Search..." />
-          <button>Search</button>
-        </form>
-      </div>
-
-      <div className="restaurant-list">
-        {restObj.map((restaurant) => (
-          <RestaurantCard restData={restaurant} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const RestaurantCard = ({ restData }) => {
-  return (
-    <div className="restaurant-card">
-      <img
-        src="https://img.freepik.com/premium-photo/abstract-blurry-restaurant-interior-background-with-empty-wooden-table-mock-up_1028938-340982.jpg"
-        alt={restData.info.name}
-        className="restaurant-image"
-      />
-      <div className="restaurant-details">
-        <h3>{restData.info.name}</h3>
-        <p>{restData.info.cuisines.join(", ")}</p>
-        <p>Rating: {restData.info.avgRating}</p>
-        <p>Delivery Time: {restData.info.sla.lastMileTravel} km</p>
-      </div>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default restObj;
