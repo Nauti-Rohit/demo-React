@@ -117,7 +117,7 @@ Their is two types of Export/Import:
 2- Named Export  
 (export const CDN_Url) (import { CDN_Url } from "../utils/constants";)
 
-Props: Passing argument to component is called props, Or dynamically passing some data to component you passing as a prop.
+Props: Passing argument to component is called props, Or dynamically passing some data to component you passing as a props.
 
 Monolith Architecture:
 all the code in a same service
